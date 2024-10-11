@@ -1,7 +1,9 @@
-import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
+
+import streamlit as st
+import os
 
 os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
